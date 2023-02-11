@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab changing</title>
+</head>
+<body>
+    <script>
+        let docTitle = document.title;
+        window.addEventListener("blur", () =>{
+        document.title = "come back its done!";//here it you change the title if you want
+        })
+        window.addEventListener("focus", () => {
+        document.getElementById("demo").src = x;
+        document.title = docTitle;//when you change the tab it will change the title
+        })
+    </script>
+</body>
+</html>
